@@ -30,12 +30,25 @@ time, mark, audio, video {
 .sidebar {
   color: white;
   display: grid;
+  grid-template-columns: 1fr 5fr;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   align-content: baseline;
   gap: 16px;
   padding: 16px;
   background-color: #5cabfa;
+}
+
+.sidebar-left {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-auto-rows: 28px;
+}
+
+.sidebar-right {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-auto-rows: 28px;
 }
 
 .header {
@@ -61,6 +74,10 @@ time, mark, audio, video {
 .header-upper-left {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+}
+
+.header-upper-left label svg {
+  height: 24px;
 }
 
 .header-bottom-left {
@@ -131,7 +148,7 @@ time, mark, audio, video {
   fill: white;
 }
 
-.sidebar span {
+.sidebar p {
   display: flex;
   align-items: center;
   font-size: 18px;
