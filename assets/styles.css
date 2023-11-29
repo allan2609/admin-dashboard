@@ -85,6 +85,21 @@ time, mark, audio, video {
   grid-row: 2 / 3;
 }
 
+.header-bottom-left img {
+  height: 64px;
+  border-radius: 50%;
+}
+
+.header-bottom-left p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-bottom-left h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
 .header-upper-right {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
