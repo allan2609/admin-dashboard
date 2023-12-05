@@ -211,6 +211,7 @@ time, mark, audio, video {
 }
 
 .card {
+  font-size: 14px;
   padding: 16px;
   height: 160px;
   box-shadow: 3px 3px 3px gray;
@@ -225,6 +226,9 @@ time, mark, audio, video {
 }
 
 .announcements, .trending {
+  font-size: 14px;
+  display: grid;
+  gap: 8px;
   background-color: white;
   border-radius: 8px;
   padding: 16px;
@@ -261,5 +265,17 @@ body {
   display: grid;
   grid-template-columns: 48px auto;
   align-items: center;
-  margin: 10px;
+  margin: 8px;
+}
+
+.announcements {
+  gap: 16px;
+  padding: 32px;
+}
+
+.announcements div:nth-child(2) {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
