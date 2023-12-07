@@ -212,6 +212,7 @@ time, mark, audio, video {
 
 .card {
   font-size: 14px;
+  color: gray;
   padding: 16px;
   height: 160px;
   box-shadow: 3px 3px 3px gray;
@@ -221,8 +222,11 @@ time, mark, audio, video {
   background-color: white;
 }
 
-.card-title {
+.card .card-title {
+  color: black;
+  font-size: 14px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .announcements, .trending {
@@ -234,6 +238,11 @@ time, mark, audio, video {
   padding: 16px;
   box-shadow: 3px 3px 3px gray;
   z-index: 2;
+}
+
+.announcements {
+  gap: 16px;
+  padding: 32px;
 }
 
 .sidebar svg {
@@ -261,6 +270,10 @@ body {
   border-radius: 50%;
 }
 
+.trending span div p:nth-child(2) {
+  color: gray;
+}
+
 .trending span {
   display: grid;
   grid-template-columns: 48px auto;
@@ -268,9 +281,15 @@ body {
   margin: 8px;
 }
 
-.announcements {
-  gap: 16px;
-  padding: 32px;
+.announcements div p {
+  color: gray;
+}
+
+.announcements div .card-title {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .announcements div:nth-child(2) {
