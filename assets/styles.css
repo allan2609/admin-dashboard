@@ -24,7 +24,7 @@ time, mark, audio, video {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 192px auto;
 }
 
 .sidebar {
@@ -57,7 +57,7 @@ time, mark, audio, video {
   grid-row: 1 / 2;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 2fr 3fr;
-  gap: 32px;
+  grid-row-gap: 24px;
   padding: 24px;
   box-shadow: 0px 4px 4px grey;
   z-index: 2;
@@ -65,10 +65,11 @@ time, mark, audio, video {
 
 .main-content {
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: auto 256px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   background-color: #e6e6e6;
+  padding: 16px;
 }
 
 .header-upper-left {
@@ -87,7 +88,7 @@ time, mark, audio, video {
 .header-upper-left input {
   background-color: #e6e6e6;
   height: 24px;
-  width: 80%;
+  width: clamp(64px, 80%, 640px);
   border: none;
   border-radius: 16px;
 }
@@ -130,9 +131,10 @@ time, mark, audio, video {
 .header-upper-right {
   display: grid;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: end;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  padding-right: 32px;
 }
 
 .header-upper-right span svg {
@@ -162,6 +164,7 @@ time, mark, audio, video {
 .header-bottom-right {
   display: grid;
   align-items: center;
+  justify-content: end;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
