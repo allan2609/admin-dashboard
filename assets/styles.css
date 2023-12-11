@@ -24,7 +24,7 @@ time, mark, audio, video {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 192px auto;
+  grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .sidebar {
@@ -204,6 +204,12 @@ time, mark, audio, video {
 .main-content-right-upper {
   display: grid;
   gap: 16px;
+}
+
+.main-content-right-bottom {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .articles {
