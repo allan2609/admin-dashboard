@@ -84,6 +84,10 @@ time, mark, audio, video {
   padding: 16px;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 .header-upper-left {
   display: grid;
   gap: 16px;
@@ -232,6 +236,7 @@ time, mark, audio, video {
 }
 
 .card {
+  display: grid;
   font-size: 14px;
   color: gray;
   padding: 16px;
@@ -243,11 +248,23 @@ time, mark, audio, video {
   background-color: white;
 }
 
-.card .card-title {
+.card div .card-title {
   color: black;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.card-icons {
+  display: grid;
+  grid-template-columns: 36px 36px 36px;
+  align-items: end;
+  justify-content: end;
+}
+
+.card-icons svg {
+  height: 20px;
+  width: 20px;
 }
 
 .announcements, .trending {
