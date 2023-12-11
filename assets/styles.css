@@ -23,8 +23,7 @@ time, mark, audio, video {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
@@ -73,15 +72,6 @@ time, mark, audio, video {
   padding: 24px;
   box-shadow: 0px 4px 4px grey;
   z-index: 2;
-}
-
-.main-content {
-  display: grid;
-  grid-template-columns: auto 256px;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-color: #e6e6e6;
-  padding: 16px;
 }
 
 h2 {
@@ -203,6 +193,15 @@ h2 {
   font-weight: bold;
 }
 
+.main-content {
+  display: grid;
+  grid-template-columns: auto clamp(200px, 30%, 400px);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #e6e6e6;
+  padding: 16px;
+}
+
 .main-content-left {
   display: grid;
   gap: 16px;
@@ -246,6 +245,7 @@ h2 {
   border-radius: 8px;
   border-left: 8px solid orange;
   background-color: white;
+  overflow: auto;
 }
 
 .card div .card-title {
