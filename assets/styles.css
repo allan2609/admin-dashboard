@@ -23,7 +23,9 @@ time, mark, audio, video {
 
 .container {
   display: grid;
+  grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 5fr;
+  min-height: 100vh;
 }
 
 .sidebar {
