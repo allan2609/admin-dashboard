@@ -23,7 +23,7 @@ time, mark, audio, video {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: fit-content(192px) fit-content(100%);
   grid-template-columns: 1fr 5fr;
   min-height: 100vh;
 }
@@ -36,7 +36,7 @@ time, mark, audio, video {
   grid-row: 1 / 3;
   align-content: baseline;
   gap: 10px;
-  padding: 16px 48px 16px 16px;
+  padding: 16px 24px 16px 16px;
   background-color: #5cabfa;
 }
 
@@ -69,7 +69,7 @@ time, mark, audio, video {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: fit-content(112px) fit-content(160px);
   grid-row-gap: 24px;
   padding: 24px;
   box-shadow: 0px 4px 4px grey;
@@ -142,7 +142,6 @@ h2 {
   justify-content: end;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  padding-right: 32px;
 }
 
 .header-upper-right span svg {
@@ -180,19 +179,19 @@ h2 {
 .header-bottom-right span {
   display: grid;
   grid-template-columns: repeat(3, 112px);
+  justify-items: end;
 }
 
 .header-bottom-right span div {
   display: grid;
-  width: 80px;
-  height: 32px;
-  border-radius: 16px;
+  width: 4.75rem;
+  height: 2rem;
+  border-radius: 1rem;
   color: white;
   background-color: #5cabfa;
   align-items: center;
   justify-items: center;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .main-content {
