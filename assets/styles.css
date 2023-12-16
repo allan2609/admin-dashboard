@@ -24,18 +24,18 @@ time, mark, audio, video {
 .container {
   display: grid;
   grid-template-rows: fit-content(12rem) fit-content(100%);
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 13rem auto;
   min-height: 100vh;
 }
 
 .sidebar {
   color: white;
   display: grid;
-  grid-template-columns: 2rem auto;
+  grid-template-rows: fit-content(3rem) fit-content(10rem) auto;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   align-content: baseline;
-  gap: 0.6rem;
+  gap: 3rem;
   padding: 1rem 1.5rem 1rem 1rem;
   background-color: #5cabfa;
 }
@@ -47,21 +47,20 @@ time, mark, audio, video {
 }
 
 .sidebar p {
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
+  display: grid;
+  align-content: center;
 }
 
-.sidebar svg:first-child {
+.dashboard, .links, .settings {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2rem auto;
+}
+
+.dashboard svg, .dashboard p {
   height: 2rem;
   width: 2rem;
-  margin-bottom: 2rem;
-}
-
-.sidebar p:first-of-type {
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1.9rem;
 }
 
 .header {
