@@ -23,7 +23,7 @@ time, mark, audio, video {
 
 .container {
   display: grid;
-  grid-template-rows: fit-content(12rem) fit-content(100%);
+  grid-template-rows: fit-content(12rem) auto;
   grid-template-columns: 13rem auto;
   min-height: 100vh;
 }
@@ -111,7 +111,7 @@ h2 {
   display: grid;
   gap: 1rem;
   align-items: center;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 4.5rem auto;
 }
 
 .header-bottom-left span div {
@@ -230,7 +230,7 @@ h2 {
 
 .articles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
   gap: 1rem;
 }
