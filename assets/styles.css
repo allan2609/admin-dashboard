@@ -21,6 +21,10 @@ time, mark, audio, video {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: grid;
   grid-template-rows: fit-content(12rem) auto;
@@ -44,6 +48,12 @@ time, mark, audio, video {
   height: 1.5rem;
   width: 1.5rem;
   fill: white;
+}
+
+.sidebar a {
+  color: white;
+  display: grid;
+  align-content: center;
 }
 
 .sidebar p {
